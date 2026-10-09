@@ -1,0 +1,5 @@
+name=Apocalypse & Chill
+id=apocalypseandchill
+description=A PhunMart 2 vending machine that sells VHS tapes. Requires PhunMart 2.
+require=phunmart2
+versionMin=42.0.0
