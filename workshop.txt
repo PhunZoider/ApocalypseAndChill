@@ -1,0 +1,14 @@
+version=1
+title=Apocalypse & Chill
+description=[b]Be kind, rewind.[/b]
+description=
+description=A PhunMart 2 vending machine stocked with VHS tapes, for the survivor who still has a working TV and a free evening.
+description=
+description=[b]Requires [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3689006725]PhunMart 2[/url].[/b] This mod does nothing on its own.
+description=
+description=[h2]For Modders[/h2]
+description=This mod is also a template. It is one Lua file and one texture, and shows the least it takes to add your own shop to PhunMart 2. The source is on [url=https://github.com/PhunZoider/ApocalypseAndChill]GitHub[/url].
+description=
+description=Coded with love for the awesome [url=https://discord.gg/v2USyAtP6q]PhunZoid[/url] community.
+tags=Build 42;Items;Multiplayer
+visibility=public
