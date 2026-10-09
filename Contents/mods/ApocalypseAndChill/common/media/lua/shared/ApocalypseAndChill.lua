@@ -30,7 +30,15 @@ table.insert(PhunMart.defaultPaths.groups, {
         },
         -- Full item IDs. Or use categories = {"Entertainment"} to sell a whole
         -- display category.
-        items = {"Base.VHS_Retail", "Base.VHS_Home"}
+        items = {"Base.VHS_Retail", "Base.VHS_Home"},
+        -- A tape is one item with the movie attached afterwards. This sells
+        -- every title as its own offer, and the tapes that teach a skill cost
+        -- more. Leave it out for groups of ordinary items.
+        recordings = {
+            skill = {
+                price = "currency_mid"
+            }
+        }
     }
 })
 
@@ -59,10 +67,13 @@ table.insert(PhunMart.defaultPaths.shops, {
         -- Open the shop window as a list rather than a grid of icons. Every
         -- VHS shares one icon, so names read better than pictures.
         defaultView = "list",
-        -- Stock everything in its pools. For a bigger pool, use
-        -- {mode = "weighted", count = {min = 4, max = 6}} to pick a few each restock.
+        -- There are around 280 tapes, so show a handful each restock.
         roll = {
-            mode = "all"
+            mode = "weighted",
+            count = {
+                min = 12,
+                max = 18
+            }
         },
         poolSets = {{
             price = "currency_low",
