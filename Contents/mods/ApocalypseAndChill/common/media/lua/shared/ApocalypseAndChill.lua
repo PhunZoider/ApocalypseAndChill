@@ -56,6 +56,9 @@ table.insert(PhunMart.defaultPaths.shops, {
         -- or extension. No sprites are given, so the machine stands on
         -- PhunMart's generic tiles and needs no tile pack.
         texture = "apocalypse-and-chill",
+        -- Open the shop window as a list rather than a grid of icons. Every
+        -- VHS shares one icon, so names read better than pictures.
+        defaultView = "list",
         -- Stock everything in its pools. For a bigger pool, use
         -- {mode = "weighted", count = {min = 4, max = 6}} to pick a few each restock.
         roll = {
